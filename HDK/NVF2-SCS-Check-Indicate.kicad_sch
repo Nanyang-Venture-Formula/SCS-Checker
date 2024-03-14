@@ -5629,6 +5629,12 @@
 		(uuid "504dbd99-f317-442b-8899-69d1f239687e")
 	)
 	(junction
+		(at 212.09 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d8c337d-8c6c-4737-87a6-6b134707d5f2")
+	)
+	(junction
 		(at 46.99 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5886,6 +5892,16 @@
 	)
 	(wire
 		(pts
+			(xy 212.09 143.51) (xy 212.09 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19b88cb5-11a5-4ed5-93c9-4baa6dbef98a")
+	)
+	(wire
+		(pts
 			(xy 34.29 91.44) (xy 34.29 88.9)
 		)
 		(stroke
@@ -5896,7 +5912,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 115.57) (xy 226.06 115.57)
+			(xy 228.6 133.35) (xy 226.06 133.35)
 		)
 		(stroke
 			(width 0)
@@ -6246,7 +6262,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 143.51) (xy 215.9 143.51)
+			(xy 209.55 143.51) (xy 212.09 143.51)
 		)
 		(stroke
 			(width 0)
@@ -6363,6 +6379,16 @@
 			(type default)
 		)
 		(uuid "6dc27808-f4c7-4783-8bde-92b4dc275e3d")
+	)
+	(wire
+		(pts
+			(xy 212.09 143.51) (xy 215.9 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ec691ae-30a7-4f11-ba91-55e0bea3afe4")
 	)
 	(wire
 		(pts
@@ -6573,16 +6599,6 @@
 			(type default)
 		)
 		(uuid "8ed25e73-bfe0-48f9-bcd9-f9a9b9bdb995")
-	)
-	(wire
-		(pts
-			(xy 215.9 115.57) (xy 193.04 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94d1aa08-f10c-4041-8d4f-8f4f6fc827a5")
 	)
 	(wire
 		(pts
@@ -6903,6 +6919,16 @@
 			(type default)
 		)
 		(uuid "c9064f2d-6428-43be-b911-189512b47754")
+	)
+	(wire
+		(pts
+			(xy 212.09 133.35) (xy 215.9 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cab87a7f-db3e-4469-bfe3-63d06dc4a171")
 	)
 	(wire
 		(pts
@@ -7388,18 +7414,6 @@
 			(justify left)
 		)
 		(uuid "1b90190b-052a-4283-a313-e976475b7d2c")
-	)
-	(hierarchical_label "~{SIG_TEST}"
-		(shape input)
-		(at 193.04 115.57 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1f5a9da4-44a6-4b40-bd01-393374f79a3a")
 	)
 	(hierarchical_label "LED_TEST+"
 		(shape input)
@@ -8468,7 +8482,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
+		(property "Footprint" "NVF-Kicad:PH_01x02H-H"
 			(at 22.86 123.19 0)
 			(effects
 				(font
@@ -9180,7 +9194,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
+		(property "Footprint" "NVF-Kicad:PH_01x02H-H"
 			(at 76.2 123.19 0)
 			(effects
 				(font
@@ -9866,6 +9880,80 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push_LED")
+		(at 220.98 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3da977bd-7353-49bd-9677-e92b5ddd3c4a")
+		(property "Reference" "SW101"
+			(at 220.98 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_LED"
+			(at 220.98 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch with LED, generic"
+			(at 220.98 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0c5c712f-1fc7-49ac-8ea7-07cd9488f82e")
+		)
+		(pin "4"
+			(uuid "14b1f324-c196-45b6-927f-f395f80190ba")
+		)
+		(pin "3"
+			(uuid "7f220458-2a0e-49de-8612-4161f83f7825")
+		)
+		(pin "1"
+			(uuid "f26393bb-08db-45b5-aeb7-fc7c8cd609d4")
+		)
+		(instances
+			(project "NVF2-SCS-Check-Indicate"
+				(path "/496d988d-d6e3-460c-be2c-055403d457cf"
+					(reference "SW101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 198.12 156.21 0)
 		(unit 1)
@@ -10000,7 +10088,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 228.6 115.57 90)
+		(at 228.6 133.35 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10009,7 +10097,7 @@
 		(dnp no)
 		(uuid "40fd3b74-e7bd-4770-b518-4da2193e650c")
 		(property "Reference" "#PWR0141"
-			(at 234.95 115.57 0)
+			(at 234.95 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10018,7 +10106,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 232.664 115.57 0)
+			(at 232.664 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10027,7 +10115,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 115.57 0)
+			(at 228.6 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10036,7 +10124,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 115.57 0)
+			(at 228.6 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10045,7 +10133,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 228.6 115.57 0)
+			(at 228.6 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10295,7 +10383,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 220.98 115.57 0)
+		(at 220.98 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10303,7 +10391,7 @@
 		(dnp no)
 		(uuid "4cb398f1-0e9d-4cf3-b5db-6f4a1511b11a")
 		(property "Reference" "SW102"
-			(at 220.98 110.49 0)
+			(at 220.98 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10311,7 +10399,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 220.98 110.49 0)
+			(at 220.98 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10320,7 +10408,7 @@
 			)
 		)
 		(property "Footprint" "NVF-Kicad:PushBtn_TS-1187A-B-A-B"
-			(at 220.98 110.49 0)
+			(at 220.98 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10329,7 +10417,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 220.98 110.49 0)
+			(at 220.98 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10338,7 +10426,16 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 220.98 115.57 0)
+			(at 220.98 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" " C318884"
+			(at 220.98 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10658,7 +10755,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "MC14584BDG"
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/mc14584b-d.pdf"
 			(at 139.7 58.42 0)
 			(effects
 				(font
@@ -10695,6 +10792,15 @@
 			)
 		)
 		(property "Sim.Type" ""
+			(at 157.48 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Element14" "9665102"
 			(at 157.48 45.72 0)
 			(effects
 				(font
@@ -11535,107 +11641,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push_LED")
-		(at 220.98 146.05 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "773e5db7-efaf-4a87-9202-130e656b094f")
-		(property "Reference" "SW101"
-			(at 220.98 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push_LED"
-			(at 220.98 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "NVF-Kicad:PH_01x04H-H"
-			(at 220.98 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 220.98 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch with LED, generic"
-			(at 220.98 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 220.98 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 220.98 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 220.98 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9201073a-c307-4e92-b46c-f4ecb4dd49ec")
-		)
-		(pin "2"
-			(uuid "e318310e-d3bb-4331-ad44-a4b56423b30a")
-		)
-		(pin "3"
-			(uuid "4525d8e6-f6b7-4002-b48c-0b8fa76d28cc")
-		)
-		(pin "4"
-			(uuid "68c98192-dbd7-4033-9efa-0e0328d807cf")
-		)
-		(instances
-			(project "NVF2-SCS-Check-Indicate"
-				(path "/496d988d-d6e3-460c-be2c-055403d457cf"
-					(reference "SW101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 106.68 135.89 0)
 		(unit 1)
@@ -11829,7 +11834,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
+		(property "Footprint" "NVF-Kicad:PH_01x02H-H"
 			(at 40.64 172.72 0)
 			(effects
 				(font
@@ -12220,7 +12225,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
+		(property "Footprint" "NVF-Kicad:PH_01x02H-H"
 			(at 22.86 88.9 0)
 			(effects
 				(font
@@ -12381,7 +12386,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
+		(property "Footprint" ""
 			(at 35.2552 133.35 0)
 			(effects
 				(font
@@ -13000,7 +13005,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
+		(property "Footprint" "NVF-Kicad:PH_01x02H-H"
 			(at 76.2 88.9 0)
 			(effects
 				(font
@@ -13324,7 +13329,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
+		(property "Footprint" ""
 			(at 88.5952 99.06 0)
 			(effects
 				(font
@@ -13844,6 +13849,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C6187"
+			(at 36.83 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "1d19b782-a790-4c4f-9ac4-5bcd1ba58916")
 		)
@@ -14063,7 +14077,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 25.7048 53.34 0)
 			(effects
 				(font
@@ -14090,7 +14104,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1623"
+		(property "LCSC" "C377773"
 			(at 26.67 49.53 0)
 			(effects
 				(font
@@ -14344,7 +14358,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
+		(property "Footprint" ""
 			(at 35.2552 99.06 0)
 			(effects
 				(font
@@ -14864,7 +14878,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 47.9552 53.34 0)
 			(effects
 				(font
@@ -14891,7 +14905,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14663"
+		(property "LCSC" "C377773"
 			(at 46.99 49.53 0)
 			(effects
 				(font

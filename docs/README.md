@@ -1,33 +1,30 @@
-# SCS Indicators (Rev 1.0)
+# Overview
 
-This repository contains all documents regarding the Small General board.
+This PCB is created to check the validity of the Systems Critical Signals (SCS) coming from other parts of the car. 
 
-### Shortcuts
+The board is designed to drive 12V LEDs.
 
-- [Schematics](#Schematics)
-- [Assembly](#Assembly)
-- [Renders](#Renders)
-- [Bom](#Bom)
+By default, the respective outputs (meant for LEDs) are in their safe-state, that being ON.
 
----
+Furthermore, to test if the board is still working, there is an additional input to a button to "test" the board's circuitry.
 
-## Schematics
 
-![img](./schematics/NVF2-SCS-Check-Indicate.svg)
+### Failure detection means
 
-## Assembly
+Since the safe-state of the car is that of LEDs being turned ON, there exists a failure where the board and/or LEDs do not recieve Vcc due to a blown fuse on this board or that the LV is not functioning.
 
-![img](./assembly/NVF2-SCS-Check-Indicate_Colored-TOP.svg)
-![img](./assembly/NVF2-SCS-Check-Indicate_Colored-BOT.svg)
+The "test" button (a momentary NO button), when depressed, will invert the indicator light until its release. This will serve as a sanity check when debugging any potential failures. 
 
-## Renders
+In the event that the signal to turn on or off the LED is faulty, the indicator will not switch its state when "test" is triggered. 
 
-![img](./renders/Indicators-top.png)
-![img](./renders/Indicators-bottom.png)
-![img](./renders/Indicators-isometric.png)
+In the event that the (fused) Vcc for LEDs and the board does not supply Vcc, triggering the "test" button will have the indicators stay OFF as there is no power supplying Vcc, likewise the "test" button having an indicator on it too will lack its illumination.
 
-## Bom
 
-[Interactive BOM](./ibom/NVF2-SCS-Check-Indicate-ibom.html)
+### Schematic
 
-[BOM](./bom/NVF2-SCS-Check-Indicate-BOM.csv)
+![img](./NVF2-SCS-Check-Indicate.svg)
+
+
+### Connections
+
+Refer to NVF2 Right Dashboard Packaging for the proposed hook-up schematic.
